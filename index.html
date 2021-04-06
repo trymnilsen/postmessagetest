@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function doPostMessage() {
+  window.postMessage({ message: "ID_OUT_PROCEED_PAYMENT", type: "<TYPE>", action: "CARD_AUTH" }, "*")
+}
+</script>
+</head>
+<body>
+
+<h1>tryms fantastic post message test</h1>
+<button type="button" onclick="doPostMessage()">Send message</button>
+
+</body>
+</html>
